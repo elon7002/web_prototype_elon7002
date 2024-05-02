@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Metadata for character set and viewport -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- Title of the webpage -->
+  <title>replit</title>
+  <!-- Link to the external CSS file -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Header section with navigation bar -->
+  <header id="navbar">
+    <nav class="navbar-container">
+      <!-- Logo linking to the home page -->
+      <a href="/" class="home-link">
+        <h6>Bisevo Beyond</h6>
+      </a>
+      <!-- Hamburger icon for mobile navigation -->
+      <button type="button" id="navbar-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- Navigation menu -->
+      <div id="navbar-menu">
+        <ul class="navbar-links">
+          <!-- Navigation links to various pages -->
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">home</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="about.html">about</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="map.html">map</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="visit.html">visit</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="mulitmedia.html">multimedia</a>
+          </li>
+          <li>
+            <!-- Search form -->
+            <form class="example" action="action_page.php">
+              <div class="search-container">
+                <input placeholder="  Search.." name="search" type="text">
+              </div>
+            </form>
+          </li>
+        </ul>
+        <div class="navbar-container">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Section for Multimedia -->
+    <div class="multimedia-fp">
+      <img src="img/multi-opening.jpeg" alt="Multimedia Opening" class="multimedia-opening">
+      <div class="multimedia-title"><h1>Multimedia</h1></div>
+    </div>
+
+    <!-- 'View Gallery' Button -->
+    <h3>
+      <div class="frame-content">
+        <a href="#gallery" class="text-background">View Gallery</a>
+      </div>
+    </h3>
+
+    <!-- Wrapper for Video and Instagram Images -->
+    <div class="content-wrapper">
+      <div class="multi-video-image">
+        <!-- Image for Multimedia Video -->
+        <img src="img/video-multi.png" alt="video of cave experience">
+      </div>
+      <div class="multi-insta-wrapper">
+        <!-- Instagram Image 1 -->
+        <div class="multi-insta1">
+          <img src="img/multi-insta1.jpg" alt="Instagram Picture 1">
+          <div class="click-insta">
+            <a href="https://www.instagram.com/p/CD1R4skpVbf/?igshid=YjVjNjZkNmFjNg==" class="insta-link">View on Instagram</a>
+          </div>
+        </div>
+        <!-- Instagram Image 2 -->
+        <div class="multi-insta2">
+          <img src="img/multi-insta2.jpg" alt="Instagram Picture 2">
+          <div class="click-insta">
+            <a href="https://www.instagram.com/p/CgwNkW0MNVC/?igshid=YjVjNjZkNmFjNg==" class="insta-link">View on Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Box Section -->
+    <div class='gallery-box' id='gallery'>
+    <div class='gallery-box-content'>
+      <img src="img/porat.jpg" alt="porat beach">
+      <img src="img/bluecave3.jpg" alt="blue cave">
+      <img src="img/bluecave1.jpg" alt="blue cave">
+      <img src="img/salbulnara4.jpg" alt="salbulnara beach">
+      <img src="img/adriatic1.jpg" alt="adriatic beach">
+      <img src="img/adriatic2.jpg" alt="adriatic beach">
+      <img src="img/caveside.jpg" alt="cave">
+      <img src="img/cavefront.jpg" alt="cave">
+      <img src="img/caveside2.jpg" alt="cave">
+      <img src="img/bluecaveh.jpg" alt="blue cave">
+      <img src="img/fishing.png" alt="fishing">
+      <img src="img/boat.png" alt="boat">
+      </div>
+    </div>
+
+  </main>
+
+  <!-- JavaScript section -->
+  <script>
+    // JavaScript code for handling search and navigation toggle
+    const searchInput = document.querySelector("input[name='search']");
+    const searchIcon = document.getElementById("search-icon");
+
+    navbarToggle.addEventListener('click', function() {
+      // This toggles the .active class on the navbar toggle element
+      this.classList.toggle('active');
+      // This toggles the .active class on the navbar menu element
+      navbarMenu.classList.toggle('active');
+    });
+  </script>
+
+  <!-- External JavaScript file -->
+  <script src="script.js"></script>
+
+  <!-- JavaScript for smooth scrolling to the gallery section -->
+  <script>
+    document.querySelector('.frame-content a').addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      document.querySelector(targetId).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+  <!-- JavaScript for smooth scrolling to the gallery section (DOMContentLoaded event) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Event listener for the 'View Gallery' button
+      const viewGalleryLink = document.querySelector('.frame-content a[href="#gallery"]');
+      viewGalleryLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

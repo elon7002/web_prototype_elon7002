@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Metadata for character set and viewport -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- Title of the webpage -->
+  <title>replit</title>
+  <!-- Link to the external CSS file -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- Additional link to the same CSS file (duplicate) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header section with navigation bar -->
+  <header id="navbar">
+    <nav class="navbar-container">
+      <!-- Logo linking to the home page -->
+      <a href="/" class="home-link">
+        <h6>Bisevo Beyond</h6>
+      </a>
+      <!-- Hamburger icon for mobile navigation -->
+      <button type="button" id="navbar-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- Navigation menu -->
+      <div id="navbar-menu">
+        <ul class="navbar-links">
+          <!-- Navigation links to various pages -->
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">home</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="about.html">about</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="map.html">map</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="visit.html">visit</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="mulitmedia.html">multimedia</a>
+          </li>
+          <li>
+            <!-- Search form -->
+            <form class="example" action="action_page.php">
+              <div class="search-container">
+                <input placeholder="  Search.." name="search" type="text">
+              </div>
+            </form>
+          </li>
+        </ul>
+        <div class="navbar-container">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main content container -->
+  <div class="container">
+    <!-- Opening image for the homepage -->
+    <img src="img/opening-image.jpg" alt="blue cave in bisevo">
+    <!-- Title for the homepage -->
+    <div class="home-title">
+      <h2>Travel to</h2>
+      <h1>Paradise</h1>
+    </div>
+  </div>
+
+  <main>
+    <!-- Introduction section -->
+    <div style="text-align: center; width: 100vw; margin-top: 20px;">
+      <h1>Explore the Island</h1>
+    </div>
+    <h4>
+      <p> Welcome to Beyond Biševo, a microsite destined for your interests in travelling overseas. For those who are history buffs, or a free traveller or even a romantic couple longing for travel, leave the routine life and board the route of your dreams.</p>
+    </h4>
+
+    <!-- Features section -->
+    <div class="features-box">
+      <div class="title-container" style="object-position: top;">
+        <h2>Biševo’s Main Features</h2>
+      </div>
+      <!-- List of features with corresponding images -->
+      <div class="features-list">
+        <!-- Feature: Caves -->
+        <div class="frame">
+          <div class="frame-content">
+            <h3 class="text-background" style=" background-color:#ffffff;">
+              <!-- Link to the 'Caves' section on the 'Visit' page -->
+              <a href="visit.html#caves" class="text-background">Caves</a>
+            </h3>
+            <!-- Image for the 'Caves' feature -->
+            <img class="element" src="img/cavep1.png" alt="image of cave" />
+          </div>
+        </div>
+        <!-- Feature: Church -->
+        <div class="frame">
+          <div class="frame-content">
+            <h3 class="text-background" style=" background-color:#ffffff;">
+              <!-- Link to the 'Church' section on the 'Visit' page -->
+              <a href="visit.html#historical-places" class="text-background">Church</a>
+            </h3>
+            <!-- Image for the 'Church' feature -->
+            <img class="element" src="img/churchp1.png" alt="church of bisevo"/>
+          </div>
+        </div>
+        <!-- Feature: Trails -->
+        <div class="frame">
+          <div class="frame-content">
+            <h3 class="text-background" style=" background-color:#ffffff;">
+              <!-- Link to the 'Trails' section on the 'Visit' page -->
+              <a href="visit.html#trails" class="text-background">Trails</a>
+            </h3>
+            <!-- Image for the 'Trails' feature -->
+            <img class="element" src="img/trailp1.png" alt="bisevo geotrail" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- JavaScript section -->
+  <script>
+    // JavaScript code for handling search and navigation toggle
+    const searchInput = document.querySelector("input[name='search']");
+    const searchIcon = document.getElementById("search-icon");
+
+    navbarToggle.addEventListener('click', function () {
+      // This toggles the .active class on the navbar toggle element
+      this.classList.toggle('active');
+      // This toggles the .active class on the navbar menu element
+      navbarMenu.classList.toggle('active');
+    });
+  </script>
+
+  <!-- External JavaScript file -->
+  <script src="script.js"></script>
+</body>
+
+</html>

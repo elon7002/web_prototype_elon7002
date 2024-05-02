@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Metadata for character set and viewport -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- Title of the webpage -->
+  <title>replit</title>
+  <!-- Link to the external CSS file -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- Additional link to the same CSS file (duplicate) -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Internal CSS styles for responsive layout -->
+  <style>
+    /* Styles for titles container */
+    .titles-container {
+      display: flex;
+      flex-wrap: wrap; /* Ensure that the items can wrap if needed */
+    }
+
+    .titles-container .column,
+    .titles-container > div {
+      box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+
+    @media screen and (min-width: 551px) {
+      /* Responsive styles for larger screens */
+      .titles-container {
+        display: flex;
+      }
+      .titles-container .column,
+      .titles-container > div {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 15px; /* or any other appropriate value */
+      }
+      .titles-container > div h1.title-community,
+      .titles-container > div h4 {
+        text-align: right;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+      }
+      .titles-container > div h4 p {
+        text-align: right;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+      }
+      .titles-container > div:last-child {
+        /* This style will apply to the second 'div' in '.titles-container', which is the container for the 'Community' section */
+        text-align: right;
+      }
+      /* Additional styles for images in the history section */
+      .historyp2-img {
+        position: relative;
+      }
+      .historyfacep2-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1; /* Ensure the face image is above the other image */
+        object-position: right;
+      }
+    }
+    @media screen and (max-width: 550px) {
+      /* Responsive styles for smaller screens */
+      .titles-container .column,
+      .titles-container > div {
+        width: 90%; /* Each child takes up the full width of the .titles-container */
+        text-align: center;
+        display: block; /* Stack them on top of each other */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header section with navigation bar -->
+  <header id="navbar">
+    <nav class="navbar-container">
+      <!-- Logo linking to the home page -->
+      <a href="/" class="home-link">
+        <h6>Bisevo Beyond</h6>
+      </a>
+      <!-- Hamburger icon for mobile navigation -->
+      <button type="button" id="navbar-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- Navigation menu -->
+      <div id="navbar-menu">
+        <ul class="navbar-links">
+          <!-- Navigation links to various pages -->
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">home</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="about.html">about</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="map.html">map</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="visit.html">visit</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="mulitmedia.html">multimedia</a>
+          </li>
+          <li>
+            <!-- Search form -->
+            <form class="example" action="action_page.php">
+              <div class="search-container">
+                <input placeholder="  Search.." name="search" type="text">
+              </div>
+            </form>
+          </li>
+        </ul>
+        <div class="navbar-container">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Container for the beach wave image -->
+  <div class="container-2">
+    <img src="img/wavep2.png" alt="beach wave">
+  </div>
+
+  <main>
+
+    <!-- Title for the 'Location' section -->
+    <div class="title-container">
+      <h1>Location</h1>
+    </div>
+
+    <!-- Introduction to Biševo -->
+    <h4>
+      <div style="text-align: center;">
+        <p> Biševo is a picturesque island situated in the Adriatic Sea, off the coast of Croatia. This remote and enchanting destination, known for its stunning natural beauty and crystal-clear waters, is part of the Central Dalmatian archipelago. Located approximately 5 kilometres southwest of the larger island of Vis, Biševo is a hidden gem in the Adriatic, accessible only by boat.</p>
+      </div>
+    </h4>
+
+    <!-- Image of the island's location on a map -->
+    <div class="location-img">
+      <img src="img/locationp1.png" alt="map of bisevo">
+    </div>
+
+    <!-- Titles container for 'History' and 'Community' sections -->
+    <div class="titles-container">
+      <!-- Column for the 'History' section -->
+      <div class="column">
+        <!-- Title for the 'History' section -->
+        <h1 class="title-history">History</h1>
+        <!-- Historical information and images -->
+        <h4>
+          <p style="text-align: left; width: 100%;">“STONE BOOK” FROM THE AGE OF DINOSAURS
+            <br>
+            <br>
+            The collision of the Adriatic Carbonate Platform and Europe resulted in a tectonic rise that shaped the Dinaric mountains and these hills, present-day islands of the Vis archipelago. Due to this reason, spectacular cliffs can be found all along the coasts of these islands.
+          </p>
+
+          <!-- Container for historical images -->
+          <div class="historyp2-img">
+            <!-- Main historical image -->
+            <img src="img/historyp2.png" alt="History artefacts from Bisevo andf Pavao Martins - The US King of Salmon" style="scale: 100%;">
+            
+          </div>
+
+          <p style="text-align: left; width: 100%; margin-top: 30px;">
+            PAVAO MARTINIS - THE US KING OF SALMON
+            <br>
+            <br>
+            He was born on Biševo island in 1893, and through possessing enormous fishing experience gained in his homeland, he arrived in Astoria, Oregon, having heard that there were fishermen from Komiža in Tacoma.
+
+            Pavao Martinis went down in history of American fishing not only because of the record catches of salmon in Bristol Bay and the Bering Sea, but also as the first American fisherman who discovered salmon in the rich and dangerous waters of the Aleutian Islands. In 1956, the US President Dwight D. Eisenhower awarded him the title King of Salmon for his fishing endeavors.
+
+          </p>
+        </h4>
+      </div>
+
+      <!-- Column for the 'Community' section -->
+      <div>
+        <!-- Title for the 'Community' section with specific styling -->
+        <h1 class="title-community" style=' text-align: right; width: 90%;'>Community</h1>
+        <!-- Information about the island's community -->
+        <h4>
+          <p style='width: 100%; margin-left: 20px;'>In the past, Bisevo had a small population engaged in traditional activities such as fishing, agriculture, and livestock farming. These communities were often self-sustaining and relied on the resources of the island and the surrounding sea. Over time, factors like economic changes and urbanization led to a decline in the permanent population on the island. Many people moved to the nearby larger island of Vis or to the mainland for better economic opportunities.
+            <br><br>
+            Today, Bisevo's history and cultural heritage are still evident in its architecture, including old stone houses and structures, as well as in the stories and traditions passed down through generations. The island's historical sites and landmarks also reflect its past, making it an interesting destination for those interested in exploring the history of the region.
+          </p>
+        </h4>
+
+        <!-- Image representing the island's community -->
+        <div class="communityp2-img">
+          <img src="img/communityp2.png" alt="Fishing community in Bisevo">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- JavaScript section -->
+  <script>
+    // JavaScript code for handling search and navigation toggle
+    const searchInput = document.querySelector("input[name='search']");
+    const searchIcon = document.getElementById("search-icon");
+
+    navbarToggle.addEventListener('click', function () {
+      // This toggles the .active class on the navbar toggle element
+      this.classList.toggle('active');
+      // This toggles the .active class on the navbar menu element
+      navbarMenu.classList.toggle('active');
+    });
+  </script>
+
+  <!-- External JavaScript file -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
